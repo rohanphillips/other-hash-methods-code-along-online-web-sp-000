@@ -9,7 +9,11 @@ require 'pry'
 # }
 
 def get_the_min(groceries)
-  collection = groceries.keys.sort
-
-  collection.first
+  collection = []
+  groceries.each do |category, items|
+    items.each do |item|
+      collection << item
+    end
+  end
+  collection.sort.first
 end
