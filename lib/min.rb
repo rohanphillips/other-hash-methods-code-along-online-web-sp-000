@@ -10,6 +10,6 @@ require 'pry'
 
 def get_the_min(groceries)
   collection = groceries.keys.sort
-  binding.pry
-  collection.first()
+  
+  collection.first
 end
